@@ -154,6 +154,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
+    'Social',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -178,3 +179,5 @@ LOGGING = {
         },
     }
 }
+
+AUTH_PROFILE_MODULE = 'Social.UserProfile'
