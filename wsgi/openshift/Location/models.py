@@ -26,6 +26,6 @@ class Location(Model):
     radius = models.FloatField()
     owner = models.ForeignKey(ActiveEntity)
     address = models.OneToOneField(Address)
-    phone = models.ForeignKey(ContactItem)
+    phone = models.OneToOneField(ContactItem)
 
 

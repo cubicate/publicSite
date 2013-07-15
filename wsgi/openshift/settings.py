@@ -157,6 +157,7 @@ INSTALLED_APPS = (
     'Social',
     'Contact',
     'Location',
+    'Business',
 
 )
 
