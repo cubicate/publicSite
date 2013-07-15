@@ -159,6 +159,7 @@ INSTALLED_APPS = (
     'Location',
     'Business',
     'TimeTable',
+    'Gallery',
 
 )
 

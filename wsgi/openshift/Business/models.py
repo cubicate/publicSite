@@ -5,7 +5,7 @@ from Social.models import Place, Nomenclator
 
 
 class BusinessType(Nomenclator):
-    parent = models.ForeignKey('self', related_name='childs')
+    parent = models.ForeignKey('self', related_name='children')
     description = models.TextField()
 
 
