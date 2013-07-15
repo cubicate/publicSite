@@ -158,6 +158,7 @@ INSTALLED_APPS = (
     'Contact',
     'Location',
     'Business',
+    'TimeTable',
 
 )
 
