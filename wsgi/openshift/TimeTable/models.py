@@ -3,8 +3,18 @@ from django.db.models import Model
 
 
 class DayHours(Model):
+    WEEK_DAYS = (
+        (u'mon', u'Monday'),
+        (u'tue', u'Tuesday'),
+        (u'wed', u'Wednesday'),
+        (u'thu', u'Thursday'),
+        (u'fri', u'Friday'),
+        (u'sat', u'Saturday'),
+        (u'sun', u'Sunday'),
+    )
     name = models.CharField(max_length=20)
     description = models.CharField(max_length=256)
+    weekDay = models.CharField(max_length=5, choices=WEEK_DAYS, null=True)
     openHours = models.ForeignKey('OpenHours', related_name='specialDayHours')
 
 
